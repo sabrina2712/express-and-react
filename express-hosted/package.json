@@ -1,0 +1,22 @@
+{
+  "name": "express-hosted-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install-deps:front-end": "npm i --prefix ./front-end",
+    "install-deps:back-end": "npm i --prefix ./back-end",
+    "install-deps": "run-p install-deps:*",
+    "build:front-end": "npm run build --prefix ./front-end",
+    "start:back-end": "npm run start --prefix ./back-end",
+    "start": "npm-run-all install-deps build:front-end start:back-end",
+    "dev:front-end": "npm run start --prefix ./front-end",
+    "dev:back-end": "PORT=4000 npm run dev --prefix ./back-end",
+    "dev": "run-p dev:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
