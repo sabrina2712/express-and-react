@@ -1,4 +1,4 @@
-# Express & React, A Love Story
+# Express Hosted
 
 We have many options to serve our applications we will take a look at one way to serve our front-end and our back-end.
 
